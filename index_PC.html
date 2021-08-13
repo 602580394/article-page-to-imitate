@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/top_PC.css">
+    <link rel="stylesheet" href="css/middle_PC.css">
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery-1.8.0.js"></script>
+    <script src="js/utf.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;       
+        }
+        body{
+            background-color: rgb(249,249,249);
+        }
+        img{
+            vertical-align: bottom;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 200px;
+            right: 100px;
+            z-index: 50;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 40px;
+            border-radius: 40px;
+            background-image: url(图标/置顶.png);
+        }
+        #myBtn:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="top_all">
+        <div class="top_one">
+            <img src="图标/金十logo-蓝.png">
+        </div>
+        <div class="top_two">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">数据</a>
+                </li>
+                <li>
+                    <a href="#">资讯</a>
+                </li>
+                <li>
+                    <a href="#">视频</a>
+                </li>
+                <li>
+                    <a href="#">日历</a>
+                </li>
+            </ul>
+        </div>
+        <div class="top_three">
+            <div class="top_three_a">
+                <div class="login">
+                    <a href="#">登录</a>
+                    <i>&nbsp|&nbsp</i>
+                    <a href="#">注册</a>
+                </div>
+                <div class="download">
+                    <a href="#">下载App</a>
+                </div>
+            </div>
+            <div class="top_three_b">
+                <div>
+                    <img src="图标/ic搜索.png">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="middle_all">
+        <div class="middle_one">
+            <h2>挂单报告：黄金上方助理明显&nbsp&nbsp欧美下方有密集支撑</h2>
+            <div class="middle_one_a">
+                <img src="图标/头像.png">
+                <a href="#">Skr橙子</a>
+                <p>·&nbsp1小时前</p>
+            </div>
+            <div class="middle_one_b">
+                <div class="middle_one_b_f">
+                    <div class="wx">
+                        <img src="图标/ic微信.png">
+                        <div class="wxfx">
+                            <div id="qrcodeCanvas"></div>
+                            <p>微信扫码分享</p>
+                        </div>
+                    </div>
+                    <div class="qq">
+                        <img src="图标/icQQ.png">
+                        <div class="qqfx">
+                            <input type="text" value="www.jin10.com">
+                            <p>复制分享链接</p>
+                        </div>
+                    </div>
+                    <div class="wb">
+                        <a target="_blank" href="http://service.weibo.com/share/share.php?url=www.jin10.com">
+                            <img src="图标/ic微博.png">
+                        </a>
+                    </div>
+                    <p>分享文章</p>
+                </div>
+                <p>|</p>
+                <div class="middle_one_b_l">
+                    <a class="down" href="#" download="downImg">
+                        <img src="图标/ic生成图片.png" class="image">
+                    </a>
+                    <p>生成图片</p>
+                </div>
+            </div>
+            <div class="both"></div>
+            <div class="middle_one_c">
+                <p>关注挂单报告，从市场的筹码分布出发，解读挂单背后的多空秘密。
+                    主要覆盖品种：金黄、原油、英镑、欧元、日元、加元、澳元。数
+                    据均来自大型经纪商，仅供参考，不作投资建议。
+                </p>
+                <p>
+                    标普500指数年内迄今已上涨了逾10%，不过涨势在最近几周却陷入
+                    停滞，因交易员们在经济增长前景与通胀威胁间陷入权衡。从石油
+                    到木材的原料成本大幅上升、供应链出现瓶颈、劳动力市场趋紧等
+                    诸多现象，均加剧了人们对通胀过热的担忧。
+                </p>
+            </div>
+            <div id="main" style="width: 700px;height:320px;margin-left: 40px;"></div>
+            <div class="middle_one_d">
+                <p>
+                    由于头部正极材料企业往往与下游动力电池大厂深度绑定，产有所供，
+                    能维持较高的产能利用率，而尾部企业销量少、难盈利，整个行业马
+                    太效应进一步凸显。
+                </p>
+                <video controls="" autoplay="" width="673" height="378" 
+                src="https://jin10videoserver.jin10.com/Act-ss-mp4-hd/431885531e674d2a802d296c45a87fd4/20210716jszzd.mp4" 
+                style="margin-bottom: 51px;"
+                poster="图片素材/视频.jpg">
+                </video>
+                <p>
+                    标普500指数年内迄今已上涨了逾10%，不过涨势在最近几周却陷入
+                    停滞，因交易员们在经济增长前景与通胀威胁间陷入权衡。从石油
+                    到木材的原料成本大幅上升、供应链出现瓶颈、劳动力市场趋紧等
+                    诸多现象，均加剧了人们对通胀过热的担忧。
+                </p>
+                <p>
+                    声明：
+                </p>
+                <p>
+                    本文版权归金十数据所有，未经书面授权任何商业机构、网站、公司
+                    及个人禁止转载或再利用文中信息，违者必究。
+                </p>
+            </div>
+            <div class="middle_one_e">
+                <img src="图标/ic点赞.png">
+                <div>0</div>
+            </div>
+            <div class="encourage">
+                <p>好文章，需要你的鼓励</p>
+            </div>
+        </div>
+        <div class="middle_two">
+            <img src="图标/头像-2.png" alt="">
+            <h3>Skr橙子</h3>
+            <p>我是来自异次元的橙子</p>
+            <div class="middle_two_a">
+                <a href="#">文章：320</a>
+            </div>
+        </div>
+        <div class="middle_three">
+            <h3>推荐阅读</h3>
+            <div class="middle_three_one">
+                <div></div>
+                <p>查看更多</p>
+            </div>
+            <ul>
+                <li>
+                    <img src="图片素材/图片-1.jpg" >
+                    <div>
+                        <a href="#">挂单报告：黄金留意下方空单押注元祐上行助力分布密集</a>
+                        <span>2小时前</span>
+                        <span>喵呜</span>    
+                    </div>                    
+                </li>
+                <li>
+                    <img src="图片素材/图片-2.jpg" >
+                    <div>
+                        <a href="#">黄金下方空单押注上行助力分布</a>
+                        <span>6小时前</span>
+                        <span>黄金圈</span>    
+                    </div>
+                </li>
+                <li>
+                    <img src="图片素材/图片-3.jpg" >
+                    <div>
+                        <a href="#">黄金下方空单押注上行助力分布</a>
+                        <span>昨天</span>
+                        <span>技术刘</span>    
+                    </div>
+                </li>
+                <li>
+                    <img src="图片素材/图片-4.jpg" >
+                    <div>
+                        <a href="#">黄金下方空单押注上行助力分布</a>
+                        <span>6月6日</span>
+                        <span>金融资讯</span>    
+                    </div>
+                </li>
+                <li>
+                    <img src="图片素材/图片-5.jpg">
+                    <div>
+                        <a href="#">黄金下方空单押注上行助力分布</a>
+                        <span>6月5日</span>
+                        <span>技术刘</span>    
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="both"></div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="回顶部"></button>
+</body>
+
+<script>
+    //直接选择要截图的dom，就能截图，但是因为canvas的原因，生成的图片模糊
+    //html2canvas(document.querySelector('div')).then(function(canvas) {
+    //    document.body.appendChild(canvas);
+    //});
+    //创建一个新的canvas
+    var canvas2 = document.createElement("canvas");
+    let
+    _canvas = document.querySelector('.middle_one');
+    var w = parseInt(window.getComputedStyle(_canvas).width);
+    var h = parseInt(window.getComputedStyle(_canvas).height);
+    //将canvas画布放大若干倍，然后盛放在较小的容器内，就显得不模糊了
+    canvas2.width = w * 4;
+    canvas2.height = h * 3;
+    canvas2.style.width = w + "px";
+    canvas2.style.height = h + "px";
+    //可以按照自己的需求，对context的参数修改,translate指的是偏移量
+    //  var context = canvas.getContext("2d");
+    //  context.translate(0,0);
+    var context = canvas2.getContext("2d");
+    context.scale(2, 2);
+    html2canvas(document.querySelector('.middle_one'), { canvas: canvas2 }).then(function(canvas) {
+        //document.body.appendChild(canvas);
+        //canvas转换成url，然后利用a标签的download属性，直接下载，绕过上传服务器再下载
+        document.querySelector(".down").setAttribute('href', canvas.toDataURL());
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#qrcodeCanvas").qrcode({
+            render : "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
+            text : "https://www.jin10.com/",    //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接
+            width : "60",               //二维码的宽度
+            height : "60",              //二维码的高度
+            background : "#ffffff",       //二维码的后景色
+            foreground : "#000000",        //二维码的前景色
+        });
+    });
+</script>
+<script>
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+// 指定图表的配置项和数据
+var option = {
+    title: {
+        text: '近1年黄金走势'
+    },
+    tooltip: {},
+    legend: {
+        data:['柱状图','折线图']
+    },
+    xAxis: {
+        data: ['2020/4',"2020/6","2020/8","2020/10","2020/12","2021/2"]
+    },
+    yAxis: {
+
+    },
+    series: [{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [0.7, 0.4, -0.3, 0.5, 0.7, 0.4]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [0.6, 0.5, 0.5, 0.1, 0.5, 0.1]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [-0.2,-0.3, 0.5, 0.5, -0.2,-0.3]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [-0.1, -0.1, 0.2, -0.8, -0.1, -0.1]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [-0.5, 0.2, 0.4, -0.4, -0.5, 0.2]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [0.8, 0.4, -0.5, -0.3, 0.8, 0.4]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [0.5, -0.4, -0.8, -0.4, 0.5, -0.4]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [0.3, 0.7, 0.5, -0.2,0.7, 0.5]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [0.4, 0.8, -0.8, -0.1,  -0.8, -0.1]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [0.2, 0.4, -0.5, -0.4,0.2, 0.4]
+    },{
+        name: '柱状图',
+        type: 'bar',
+        itemStyle: {
+                    normal: {
+                        color: '#b3c8fa'
+                    }
+                },
+        data: [-1, 0.2, 0.2, -0.5, 0.2, 0.2]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [0.7, 0.4, -0.3, 0.5, 0.7, 0.4]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [0.6, 0.5, 0.5, 0.1, 0.5, 0.1]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [-0.2,-0.3, 0.5, 0.5, -0.2,-0.3]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [-0.1, -0.1, 0.2, -0.8, -0.1, -0.1]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [-0.5, 0.2, 0.4, -0.4, -0.5, 0.2]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [0.8, 0.4, -0.5, -0.3, 0.8, 0.4]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [0.5, -0.4, -0.8, -0.4, 0.5, -0.4]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [0.3, 0.7, 0.5, -0.2,0.7, 0.5]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [0.4, 0.8, -0.8, -0.1,  -0.8, -0.1]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [0.2, 0.4, -0.5, -0.4,0.2, 0.4]
+    },{
+        name: '折线图',
+        type: 'line',
+        data: [-1, 0.2, 0.2, -0.5, 0.2, 0.2]
+    },]
+};
+
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+<script>
+    var div = document.querySelector('.middle_one_e');
+    var button = document.querySelectorAll('.middle_one_e');
+    for (let index = 0; index < button.length; index++) {
+        let num = 0;
+        button[index].onclick = function() {
+            num++;
+            this.innerHTML = `<img src="图标/ic点赞.png"><div>${num}</div>`;
+        }
+    };
+</script>
+<script>
+    // 当网页向下滑动 20px 出现"返回顶部" 按钮
+    window.onscroll = function() {scrollFunction()};
+     
+    function scrollFunction() {console.log(121);
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+     
+    // 点击按钮，返回顶部
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</html>
