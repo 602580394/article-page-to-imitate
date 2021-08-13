@@ -1,0 +1,111 @@
+.top{
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 99;
+}
+.top_all{
+    width: 1078px;
+    height: 55px;
+    margin: auto;
+}
+.top_one img{
+    width: 133px;
+    height: 28px;
+    margin-top: 14px;
+    margin-right: 80px;
+    float: left;
+}
+.top_two ul li{
+    font-size: 16px;
+    float: left;
+    line-height: 55px;
+    margin-right: 44.5px;
+}
+.top_two ul li a{
+    color: rgb(44, 47, 49);
+    display: block;
+}
+.top_two ul li:hover{
+    font-weight:600;
+    border-bottom:3px black solid;
+}
+.top_two ul li:nth-child(3){
+    font-weight:600;
+    border-bottom:3px black solid;
+}
+.top_three .top_three_b{
+    float:right;
+    margin-top: 16px;
+}
+.top_three .top_three_b div{
+    width: 19px;
+    height: 19px;
+    transition: all 2s;
+    transform: scale3d(0);
+}
+.top_three .top_three_b div:hover{
+    width: 150px;
+    height: 24px;
+    background-color: rgb(162, 165, 168,0.3);
+    float:right;
+    border-radius: 12px;
+    transform: scale3d(0);
+}
+.top_three .top_three_b div img{
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+.top_three .top_three_b div input{
+    display: none;
+}
+.top_three .top_three_b div:hover input{
+    display: inline-block;
+    width: 110px;
+    outline:none;
+    background-color: rgb(162, 165, 168,0);
+    border: none;
+}
+.top_three .top_three_a .download{
+    float:right;
+    font-size: 13px;
+    width: 96px;
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.top_three .top_three_a .download a{
+    color: rgb(78, 120, 224);
+    display: block;
+    border: 2px solid rgb(78, 120, 224);
+    border-radius: 4px;
+}
+.top_three .top_three_a .download a:hover{
+    color: rgb(250, 250, 250);
+    background-color: rgb(78, 120, 224);
+}
+.top_three .top_three_a .login{
+    color: white;
+    margin-top: 11px;
+    float:right;
+    font-size: 13px;
+    width: 96px;
+    height: 30px;
+    background-color:rgb(78, 120, 225);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+}
+.top_three .top_three_a .login a{
+    color: white;
+}
+.top_three .top_three_a .login a:hover{
+    color: rgb(219, 219, 219);
+}

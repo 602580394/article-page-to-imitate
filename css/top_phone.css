@@ -1,0 +1,92 @@
+.top{
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+    width:100%;
+    z-index: 99;
+}
+.top_all{
+    width: 414px;
+    height: 46px;
+    margin: auto;
+}
+.top_one img{
+    width: 23px;
+    height: 17px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+    z-index: 10;
+}
+.top_two{
+    width: 300px;
+    height:31px;
+    background-color:rgb(154, 154, 154,0.5);
+    border-radius: 28px;
+    margin-top: 8px;
+    z-index: 99;
+    margin-left: 10px;
+    position: absolute;
+    display: none;
+}
+.top_one:hover .top_two{
+    display: block;
+}
+.top_two ul {
+    margin-left: 35px;
+}
+.top_two ul li{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.top_two ul li:nth-child(3){
+    background-color:rgb(154, 154, 154,0.8);
+    border-radius: 31px;
+}
+.top_two ul li:hover{
+    background-color:rgb(154, 154, 154,0.8);
+    border-radius: 31px;
+}
+.top_two ul li a{
+    color: white;
+    line-height: 31px;
+}
+.top_three img{
+    margin-top: 10px;
+    width: 28px;
+    height: 28px;
+    float: right;
+    margin-right: 20px;
+}
+.top_three .top_three_a{
+    width: 200px;
+    height:31px;
+    background-color:rgb(154, 154, 154,0.5);
+    border-radius: 28px;
+    margin-top: 8px;
+    z-index: 99;
+    margin-left: 195px;
+    position: absolute;
+    display: none;
+}
+.top_three:hover .top_three_a{
+    display: block;
+}
+.top_three .top_three_a div{
+    float: right;
+}
+.top_three .top_three_a div a{
+    line-height: 31px;
+    font-size: 12px;
+    color: white;
+}
+.top_three .top_three_a div i{
+    color: white;
+}
+.top_three .top_three_a .login{
+    margin-right: 40px;
+}
+.top_three .top_three_a .download{
+    margin-right: 20px;
+}
